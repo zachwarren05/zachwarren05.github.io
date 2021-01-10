@@ -37,3 +37,7 @@ footer {
     padding: 3px;
     font-family: 'PT Sans';
 }
+
+#currentdate {
+    color: #39FF14;
+}
