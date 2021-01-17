@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC');
+
+header {
+    background-color:  #424949;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+    font-family: 'Staatliches';
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Staatliches';
+}
+
+h3 {
+    font-family: 'Noto Sans SC';
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+main {
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+}
+
+section {
+    border-style: groove;
+    border-color: black;
+    border-radius: 5px;
+}
+
+p {
+    font-family: 'Noto Sans SC';
+}
+
+section h2 {
+    display: block;
+    background-color: #2ECC71;
+    margin: 0%;
+    padding: 1em;
+    max-width: 100%;
+    text-align: left;
+    border-style: solid;
+    border-color:  #2ECC71;
+    border-radius: 5px 5px 0 0;
+    margin-left: -6%;
+    margin-right: -6%;
+}
+
+section img {
+    display: block;
+    max-width: 100%;
+    border-style: solid;
+    border-width:1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: #424949;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 3px;
+    font-family: 'PT Sans';
+}
+
+main section {
+    margin: 0.5rem;
+    border: 1px solid #bbb;
+    padding: 0 1rem;
+    background-color: #eee;
+}
+
+
+
+@media only screen and (min-width: 37.5em) {
+    
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section:nth-child(3) {
+        grid-column: span 2;
+
+    }
+}
+
+@media only screen and (min-width: 60em) {
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section:nth-child(3) {
+        grid-column: span 1;
+    }
+}
