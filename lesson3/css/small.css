@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik:wght@500');
+
 nav ul {
     display: block;
     list-style: none;
     align-items: center;
+    font-family: 'PT Sans';
+}
+
+nav ul a {
+    color: #95D5B2;
 }
 
 body {
@@ -19,4 +26,13 @@ footer, nav {
     background-color: #081C15;
     color: White;
     text-align: center;
+    font-family: 'PT Sans';
+}
+
+h1, h2, h3 {
+    font-family: 'Rubik';
+}
+
+p {
+    font-family: 'PT Sans';
 }
