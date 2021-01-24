@@ -1,0 +1,22 @@
+nav ul {
+    display: block;
+    list-style: none;
+    align-items: center;
+}
+
+body {
+    background-color: #40916C;
+}
+
+main {
+    background-color: White;
+    color: Black;
+}
+
+
+
+footer, nav {
+    background-color: #081C15;
+    color: White;
+    text-align: center;
+}
