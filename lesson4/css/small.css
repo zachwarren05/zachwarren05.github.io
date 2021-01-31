@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik:wght@500');
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    font-family: 'PT Sans';
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+
+nav ul a {
+    color: #95D5B2;
+}
+
+.responsive li {
+    display: block;
+}
+
+header img {
+    height: 90px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 1rem;
+}
+
+.m {
+    font-size: .75rem;
+    padding: 0 20% 0 20%;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background-color: #40916C;
+}
+
+main {
+    background-color: White;
+    color: Black;
+}
+
+main div {
+     border: #52B788;
+     border-style: dotted;
+     background-color: #eee;
+     padding: 15px;
+     margin: 10px auto;
+     font-style: italic;
+}
+
+
+
+footer, nav {
+    background-color: #081C15;
+    color: White;
+    text-align: center;
+    font-family: 'PT Sans';
+}
+
+h1, h2, h3 {
+    font-family: 'Rubik';
+}
+
+p {
+    font-family: 'PT Sans';
+}
+
+main {
+    margin: 0;
+    padding: 30px;
+}
+
+footer {
+    margin: 0;
+    padding: 2px;
+    font-size: .75rem;
+}
