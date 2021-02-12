@@ -180,4 +180,6 @@ table {
     color: black;
     text-align: center;
     display: block;
+    padding: 1rem;
+    margin: 0 auto;
 }
