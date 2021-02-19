@@ -1,0 +1,21 @@
+article img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+  article img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+
+img {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    margin: auto;
+    max-width:100%;
+    padding: 10px;
+    border: solid black 1px;
+}
+
+h1 {
+    text-align: center;
+}
