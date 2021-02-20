@@ -56,7 +56,14 @@
 
     <main>
       <h2>Preston Idaho</h2>
-      <div class="hero"><img class="hero-img" src="images/banner-image.jpg" alt="Preston Town Hero Image"/></div>
+      <div class="hero">
+        <picture>
+          <source media="(max-width: 519px)" srcset="images/heroimgsmall.jpg">
+          <source media="(max-width: 949px)" srcset="images/heroimgmedium.jpg">
+          <source media="(min-width: 950px)" srcset="images/heroimglarge.jpg">
+          <img class="hero-img" src="images/heroimglarge.jpg" alt="Hero Image"/>
+        </picture>
+      </div>
       <div class="weatherBox">
         <div>
             <h1>Weather Summary</h1>
