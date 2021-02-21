@@ -183,3 +183,17 @@ table {
     padding: 1rem;
     margin: 0 auto;
 }
+
+.gallerygrid figure{
+    justify-self: center;
+    justify-content: center;
+}
+
+.gallerygrid figure img {
+    width: 100%;
+}
+
+figcaption {
+    font-family: 'Rubik';
+    text-align: center;
+}
