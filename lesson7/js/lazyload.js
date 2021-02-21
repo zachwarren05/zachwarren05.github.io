@@ -27,7 +27,7 @@ imagesToLoad.forEach((img) => {
     }, imgOptions);
 
     imagesToLoad.forEach((img) => {
-      imgObserver.observe(img);
+      observer.observe(img);
     });
   } else {
     imagesToLoad.forEach((img) => {
