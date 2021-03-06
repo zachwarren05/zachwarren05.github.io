@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/lesson6/css/small.css" />
     <link rel="stylesheet" href="/lesson6/css/medium.css" />
     <link rel="stylesheet" href="/lesson6/css/large.css" />
+    <link rel="stylesheet" href="css/stormcenter.css" />
   </head>
   <body>
     <div><p id="saturday"></p></div>
@@ -59,15 +60,15 @@
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>User Information</legend>
-            <label>Full Name*<input type="text" name="fullname" minlength= "5" required></label>
-            <label>Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
-            <label>Phone*<input type="tel" name="phone" required></label>
-            <label>Zip Code*<input type="number" name="zipcode" required></label>
-            <label>Storm Date<input type="date" name="stormdate"></label>
+            <label class="top">Full Name*<input type="text" name="fullname" minlength= "5" required></label>
+            <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+            <label class="top">Phone*<input type="tel" name="phone" required></label>
+            <label class="top">Zip Code*<input type="number" name="zipcode" required></label>
+            <label class="top">Storm Date<input type="date" name="stormdate"></label>
         </fieldset>
         <fieldset>
           <legend>Storm Information</legend>
-          <label>Storm Type</label>
+          <label class="sbs">Storm Type</label>
           <input list="types" name="stormtypes" />
           <datalist id ="types">
             <option value="Flash Flood"></option>
@@ -76,12 +77,27 @@
             <option value="Thunderstorm"></option>
             <option value="Tornado"></option>
           </datalist>
-          <label>Storm Severity
+          <label class="sbs">Storm Severity
             <input type="range" id="severity" name="severity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)"
                    onchange="adjustRating(this.value)">
             <span id="severityvalue">5</span>
           </label>
-          <label>Storm Region
+
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+          </datalist>
+
+          <label class="sbs">Storm Region
             <select name="region" id="selectregion">
               <option value="" disabled selected>Select Region ...</option>
               <option value="Preston">Preston</option>
@@ -90,14 +106,16 @@
             </select>
           </label>
           <div>User In-Danger Level</div>
-            <label><input type="radio" name="dangerlevel" value="yes"> yes</label>
-            <label><input type="radio" name="dangerlevel" value="maybe"> maybe</label>
-            <label><input type="radio" name="dangerlevel" value="no"> no</label>
-          <div>Comments</div>
-            <label><textarea name="comments">Additional comments</textarea></label>
+            <label class="sbs"><input type="radio" name="dangerlevel" value="yes"> yes</label>
+            <label class="sbs"><input type="radio" name="dangerlevel" value="maybe"> maybe</label>
+            <label class="sbs"><input type="radio" name="dangerlevel" value="no"> no</label>
+        </fieldset>
+        <fieldset>
+          <legend>Comments</legend>
+            <label class="top"><textarea name="comments">Additional comments</textarea></label>
         </fieldset>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" class="submitBtn">
 
       </form>
 
