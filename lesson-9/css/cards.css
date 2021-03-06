@@ -13,7 +13,7 @@
         flex-direction: row;
     }
 
-    article:nth-child(odd) {
+    section:nth-child(odd) {
         flex-direction: row-reverse;
     }
 

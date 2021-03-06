@@ -20,16 +20,16 @@ fetch(requestURL)
         towninfo.textContent = 'Year Founded: ' + towns[i].yearFounded + "\r\n";
         towninfo.textContent += 'Population: ' + towns[i].currentPopulation + "\r\n";
         towninfo.textContent += 'Annual Rain Fall: ' + towns[i].averageRainfall;
-        image.setAttribute('src', towns[i].photo);
+        image.setAttribute('src', '/lesson-9/images/' + towns[i].photo);
         
-
-        card.appendChild(h2);
-        card.appendChild(h3);
-        card.appendChild(towninfo);
-        card.appendChild(image);
+        card.appendChild(article);
+        article.appendChild(h2);
+        article.appendChild(h3);
+        article.appendChild(towninfo);
+        article.appendChild(image);
 
         document.querySelector('div.cards').appendChild(card);
-        document.querySelector('div.cards').appendChild(article);
+        
         
     }
   });
