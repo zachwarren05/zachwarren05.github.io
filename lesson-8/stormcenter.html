@@ -60,7 +60,7 @@
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>User Information</legend>
-            <label class="top">Full Name*<input type="text" name="fullname" minlength= "5" required></label>
+            <label class="top">Full Name*<input type="text" name="fullname" minlength= "5" required pattern="[a-zA-Z\s]+"></label>
             <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
             <label class="top">Phone*<input type="tel" name="phone" required></label>
             <label class="top">Zip Code*<input type="number" name="zipcode" required></label>
@@ -68,7 +68,7 @@
         </fieldset>
         <fieldset>
           <legend>Storm Information</legend>
-          <label class="sbs">Storm Type</label>
+          <label class="top">Storm Type</label>
           <input list="types" name="stormtypes" />
           <datalist id ="types">
             <option value="Flash Flood"></option>
@@ -77,11 +77,12 @@
             <option value="Thunderstorm"></option>
             <option value="Tornado"></option>
           </datalist>
-          <label class="sbs">Storm Severity
+
+          <label class="top">Storm Severity</label>
             <input type="range" id="severity" name="severity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)"
                    onchange="adjustRating(this.value)">
             <span id="severityvalue">5</span>
-          </label>
+          
 
           <datalist id="tickmarks">
             <option value="0"></option>
