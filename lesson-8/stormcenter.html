@@ -68,7 +68,7 @@
         </fieldset>
         <fieldset>
           <legend>Storm Information</legend>
-          <label class="top">Storm Type</label>
+          <label class="top">Storm Type
           <input list="types" name="stormtypes" />
           <datalist id ="types">
             <option value="Flash Flood"></option>
@@ -77,6 +77,7 @@
             <option value="Thunderstorm"></option>
             <option value="Tornado"></option>
           </datalist>
+        </label>
 
           <label class="top">Storm Severity</label>
             <input type="range" id="severity" name="severity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)"
