@@ -1,0 +1,21 @@
+@media screen and (min-width: 32.5em) {
+    section {
+        max-width: 950px;
+        margin: .5rem auto;
+        border:1px solid #bbb;
+        background-color: #eee;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+    }
+
+    article:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+
+}

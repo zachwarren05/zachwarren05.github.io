@@ -8,18 +8,19 @@
       name="description"
       content="Website Planning Document for Zach Warren in WDD 230.  Web Frontend Development at Brigham Young University - Idaho"
     />
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="/lesson6/images/favicon.ico">
+    <link rel="stylesheet" href="/lesson6/css/normalize.css" />
+    <link rel="stylesheet" href="/lesson6/css/small.css" />
+    <link rel="stylesheet" href="/lesson6/css/medium.css" />
+    <link rel="stylesheet" href="/lesson6/css/large.css" />
+    <link rel="stylesheet" href="css/cards.css" />
   </head>
   <body>
     <div><p id="saturday"></p></div>
     <header>
       <img
         class="logo"
-        src="images/iconfinder_weather-thunder_274754.png"
+        src="/lesson6/images/iconfinder_weather-thunder_274754.png"
         alt="WeatherontheHorizon logo"
       />
       <section class="headings">
@@ -34,10 +35,10 @@
           <a href="#" onclick="toggleMenu()">&#9776; Menu </a>
         </li>
         <li>
-          <a href="/lesson-9/index.html">Home</a>
+          <a class="current" href="index.html">Home</a>
         </li>
         <li>
-          <a class="current" href="preston-6.html">Preston</a>
+          <a href="/lesson6/preston-6.html">Preston</a>
         </li>
         <li>
           <a href="#">Soda Springs</a>
@@ -55,7 +56,7 @@
     </nav>
 
     <main>
-      <h2>Preston Idaho</h2>
+      <h2>Home Page</h2>
       <div class="hero">
         <picture>
           <source media="(max-width: 519px)" srcset="images/heroimgsmall.jpg">
@@ -64,51 +65,9 @@
           <img class="hero-img" src="images/heroimglarge.jpg" alt="Hero Image"/>
         </picture>
       </div>
-      <div class="weatherBox">
-        <div>
-            <h1>Weather Summary</h1>
-            <hr>
-            <p>Currently: <span class="description">Sunny</span></p>
-            <p>High: <span id="high">48</span><span class="symbol">°F</span></p>
-            <p>Wind Chill: <span id="chill"></span><span class="symbol">°F</span></p>
-            <p>Humidity: <span class="humidity">69%</span></p>
-            <p>Wind Speed: <span id="speed">5</span> <span class="symbol">mph</span></p>
-        </div>
-      </div>
-      <h2 class="forecast-title">5 Day Forecast</h2>
-      <div class="forecast">
-        <table>
-          <tr>
-            <th>Wed</th>
-            <th>Thur</th>
-            <th>Fri</th>
-            <th>Sat</th>
-            <th>Sun</th>
-          </tr>
-          <tr>
-            <td class="sun"><img src="images/sun-icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/></td>
-            <td class="sun"><img src="images/sun-icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/></td>
-            <td class="sun"><img src="images/sun-icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/></td>
-            <td class="sun"><img src="images/sun-icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/></td>
-            <td class="sun"><img src="images/sun-icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/></td>
-          </tr>
-          <tr>
-            <td class="temp">89&#176;F</td>
-            <td class="temp">87&#176;F</td>
-            <td class="temp">78&#176;F</td>
-            <td class="temp">75&#176;F</td>
-            <td class="temp">72&#176;F</td>
-          </tr>
 
-          </table>
-          <!---
-        <div class="day"><p>Wed</p><img src="images/sun icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/><p>89&#176</p></div>
-        <div class="day"><p>Thur</p><img src="images/sun icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/><p>87&#176</p></div>
-        <div class="day"><p>Fri</p><img src="images/sun icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/><p>78&#176</p></div>
-        <div class="day"><p>Sat</p><img src="images/sun icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/><p>75&#176</p></div>
-        <div class="day"><p>Sun</p><img src="images/sun icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/><p>72&#176</p></div>
-        -->
-      </div>
+      <div class="cards"></div>
+      
       <div class="article">
         <img class="article_img" src="images/article-image.jpg" alt="Free stock image of people snowboarding."/>
         <h3>Founders Day Fresco</h3>
@@ -121,7 +80,7 @@
            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       </div>
       <div class="contact">
-        <img class="map" src="images/PrestonMap.png" alt="Map View of Preston Idaho"/>
+        <img class="map" src="/lesson6/images/PrestonMap.png" alt="Map View of Preston Idaho"/>
         <div class="contact-info">
           <h3>WeatherontheHorizon</h3>
           <p>30 N 1st E <br> Preston, ID 83263</p>
@@ -142,8 +101,8 @@
         <span id="date"></span>
       </p>
 
-      <script src="js/currentdate.js"></script>
-      <script src="js/windchill.js"></script>
+      <script src="/lesson6/js/currentdate.js"></script>
+      <script src="js/towndata.js"></script>
     </footer>
   </body>
 </html>
