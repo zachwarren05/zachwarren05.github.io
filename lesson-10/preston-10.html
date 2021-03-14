@@ -68,10 +68,10 @@
         <div>
             <h1>Weather Summary</h1>
             <hr>
-            <p>Currently: <span class="description"></span></p>
+            <p>Currently: <span id="description"></span></p>
             <p>High: <span id="high"></span><span class="symbol">°F</span></p>
             <p>Wind Chill: <span id="chill"></span><span class="symbol">°F</span></p>
-            <p>Humidity: <span class="humidity"></span><span class="symbol">%</span></p>
+            <p>Humidity: <span id="humidity"></span><span class="symbol">%</span></p>
             <p>Wind Speed: <span id="speed"></span> <span class="symbol">mph</span></p>
         </div>
       </div>
@@ -79,35 +79,28 @@
       <div class="forecast">
         <table>
           <tr>
-            <th>Wed</th>
-            <th>Thur</th>
-            <th>Fri</th>
-            <th>Sat</th>
-            <th>Sun</th>
+            <th><span id="day0"></span></th>
+            <th><span id="day1"></span></th>
+            <th><span id="day2"></span></th>
+            <th><span id="day3"></span></th>
+            <th><span id="day4"></span></th>
           </tr>
           <tr>
-            <td class="sun"><img src="images/sun-icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/></td>
-            <td class="sun"><img src="images/sun-icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/></td>
-            <td class="sun"><img src="images/sun-icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/></td>
-            <td class="sun"><img src="images/sun-icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/></td>
-            <td class="sun"><img src="images/sun-icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/></td>
+            <td><img id="wimg0"/></td>
+            <td><img id="wimg1"/></td>
+            <td><img id="wimg2"/></td>
+            <td><img id="wimg3"/></td>
+            <td><img id="wimg4"/></td>
           </tr>
           <tr>
-            <td class="temp">89&#176;F</td>
-            <td class="temp">87&#176;F</td>
-            <td class="temp">78&#176;F</td>
-            <td class="temp">75&#176;F</td>
-            <td class="temp">72&#176;F</td>
+            <td id="temp0">&#176;F</td>
+            <td id="temp1">&#176;F</td>
+            <td id="temp2">&#176;F</td>
+            <td id="temp3">&#176;F</td>
+            <td id="temp4">&#176;F</td>
           </tr>
 
           </table>
-          <!---
-        <div class="day"><p>Wed</p><img src="images/sun icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/><p>89&#176</p></div>
-        <div class="day"><p>Thur</p><img src="images/sun icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/><p>87&#176</p></div>
-        <div class="day"><p>Fri</p><img src="images/sun icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/><p>78&#176</p></div>
-        <div class="day"><p>Sat</p><img src="images/sun icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/><p>75&#176</p></div>
-        <div class="day"><p>Sun</p><img src="images/sun icon.png" alt="Free Sun icon from iconfinder.com User:Laura Reen"/><p>72&#176</p></div>
-        -->
       </div>
       <div class="article">
         <img class="article_img" src="images/article-image.jpg" alt="Free stock image of people snowboarding."/>
@@ -144,6 +137,7 @@
 
       <script src="js/currentdate.js"></script>
       <script src="js/windchill.js"></script>
+      <script src="js/forecast.js"></script>
     </footer>
   </body>
 </html>
