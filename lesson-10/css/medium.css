@@ -65,14 +65,19 @@
     }
 
     table td img {
-        width: 100%;
+        display: block;
         margin: 0 auto;
     }
 
-    #wimg0, #wimg1, #wimg2, #wimg3, #wimg4 {
-        border-collapse: collapse;
+    .border {
         border-left: 1px solid black;
         border-right: 1px solid black;
+    }
+
+    #wimg0, #wimg1, #wimg2, #wimg3, #wimg4 {
+        display: block;
+        margin: 0 auto;
+        border-collapse: collapse;
         width: 100%;
     }
 
