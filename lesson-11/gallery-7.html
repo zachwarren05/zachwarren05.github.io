@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Gallery</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Gallery Document for Zach Warren in WDD 230.  Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <link rel="shortcut icon" href="gallery-images/favicon.ico" />
+    <link rel="stylesheet" href="gallery-css/normalize.css" />
+    <link rel="stylesheet" href="gallery-css/small.css" />
+    <link rel="stylesheet" href="gallery-css/medium.css" />
+    <link rel="stylesheet" href="gallery-css/large.css" />
+  </head>
+  <body>
+    <div><p id="saturday"></p></div>
+    <header>
+      <img
+        class="logo"
+        src="gallery-images/iconfinder_weather-thunder_274754.png"
+        alt="WeatherontheHorizon logo"
+      />
+      <section class="headings">
+        <h1>WeatherontheHorizon.org</h1>
+        <div class="m">Let your adventure roam as far as the horizon!</div>
+      </section>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li>
+          <a href="#" onclick="toggleMenu()">&#9776; Menu </a>
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="preston-10.html">Preston</a>
+        </li>
+        <li>
+          <a href="#">Soda Springs</a>
+        </li>
+        <li>
+          <a href="#">Fish Haven</a>
+        </li>
+        <li>
+          <a href="stormcenter.html">Storm Center</a>
+        </li>
+        <li>
+          <a class="current" href="gallery-7.html">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Weather Gallery</h2>
+      <div class="gallerygrid">
+        <figure>
+          <img class="gallery" src="gallery-images/placeholder.png" data-src="images/BeachSunrise.jpg" alt="Stock Photo" />
+          <figcaption>Sunrise at the Beach</figcaption>
+        </figure>
+        <figure>
+          <img class="gallery" src="gallery-images/placeholder.png" data-src="images/DesertStorm.jpg" alt="Stock Photo" />
+          <figcaption>Desert Lightning Storm</figcaption>
+        </figure>
+        <figure>
+          <img class="gallery" src="gallery-images/placeholder.png" data-src="images/FoggyMorning.jpg" alt="Stock Photo" />
+          <figcaption>Foggy Morning in the Mountains</figcaption>
+        </figure>
+        <figure>
+          <img class="gallery" src="gallery-images/placeholder.png" data-src="images/FrozenLake.jpg" alt="Stock Photo" />
+          <figcaption>Winter on the Lake</figcaption>
+        </figure>
+        <figure>
+          <img class="gallery" src="gallery-images/placeholder.png" data-src="images/LightningTornado.jpg" alt="Stock Photo" />
+          <figcaption>Tornado and Lightning Storm</figcaption>
+        </figure>
+        <figure>
+          <img class="gallery" src="gallery-images/placeholder.png" data-src="images/Raindrops.jpg" alt="Stock Photo" />
+          <figcaption>Raindrops</figcaption>
+        </figure>
+        <figure>
+          <img class="gallery" src="gallery-images/placeholder.png" data-src="images/Snowflake.jpg" alt="Stock Photo" />
+          <figcaption>Close Up of a Snowflake</figcaption>
+        </figure>
+        <figure>
+          <img class="gallery" src="gallery-images/placeholder.png" data-src="images/SnowyLane.jpg" alt="Stock Photo" />
+          <figcaption>Winter Wonderland Driveway</figcaption>
+        </figure>
+        <figure>
+          <img class="gallery" src="gallery-images/placeholder.png" data-src="images/Waterfall.jpg" alt="Stock Photo" />
+          <figcaption>Misty Morning at the Waterfall</figcaption>
+        </figure>
+      </div>
+      <script src="gallery-js/lazyload.js"></script>
+    </main>
+
+    <footer>
+      <p>
+        © <span id="year"></span> Weather on the Horizon | Zachary Warren |
+        Idaho |
+        <a href="https://www.byui.edu/online" target="_blank">
+          BYUI Online Learning</a
+        >
+        <br />
+        <span id="date"></span>
+      </p>
+      <script src="gallery-js/currentdate.js"></script>
+    </footer>
+  </body>
+</html>
