@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Preston Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Website Planning Document for Zach Warren in WDD 230.  Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <link rel="shortcut icon" href="preston-images/favicon.ico">
+    <link rel="stylesheet" href="preston-css/normalize.css" />
+    <link rel="stylesheet" href="preston-css/small.css" />
+    <link rel="stylesheet" href="preston-css/medium.css" />
+    <link rel="stylesheet" href="preston-css/large.css" />
+  </head>
+  <body>
+    <div><p id="saturday"></p></div>
+    <header>
+      <img
+        class="logo"
+        src="preston-images/iconfinder_weather-thunder_274754.png"
+        alt="WeatherontheHorizon logo"
+      />
+      <section class="headings">
+        <h1>WeatherontheHorizon.org</h1>
+        <div class="m">Let your adventure roam as far as the horizon!</div>
+      </section>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li>
+          <a href="#" onclick="toggleMenu()">&#9776; Menu </a>
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="preston.html">Preston</a>
+        </li>
+        <li>
+          <a href="sodasprings.html">Soda Springs</a>
+        </li>
+        <li>
+          <a class="current" href="fishhaven.html">Fish Haven</a>
+        </li>
+        <li>
+          <a href="stormcenter.html">Storm Center</a>
+        </li>
+        <li>
+          <a href="gallery.html">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Preston Idaho</h2>
+      <div class="hero">
+        <picture>
+          <source media="(max-width: 519px)" srcset="preston-images/heroimgsmall.jpg">
+          <source media="(max-width: 949px)" srcset="preston-images/heroimgmedium.jpg">
+          <source media="(min-width: 950px)" srcset="preston-images/heroimglarge.jpg">
+          <img class="hero-img" src="preston-images/heroimglarge.jpg" alt="Hero Image"/>
+        </picture>
+      </div>
+      <div class="weatherBox">
+        <div>
+            <h1>Weather Summary</h1>
+            <hr>
+            <p>Currently: <span id="description"></span></p>
+            <p>High: <span id="high"></span><span class="symbol">°F</span></p>
+            <p>Wind Chill: <span id="chill"></span><span class="symbol">°F</span></p>
+            <p>Humidity: <span id="humidity"></span><span class="symbol">%</span></p>
+            <p>Wind Speed: <span id="speed"></span> <span class="symbol">mph</span></p>
+        </div>
+      </div>
+      <h2 class="forecast-title">5 Day Forecast</h2>
+      <div class="forecast">
+        <table>
+          <tr>
+            <th>Wed</th>
+            <th>Thur</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+          </tr>
+          <tr>
+            <td class="border"><img id="wimg0" src="" alt="Weather Pic"/></td>
+            <td class="border"><img id="wimg1" src="" alt="Weather Pic"/></td>
+            <td class="border"><img id="wimg2" src="" alt="Weather Pic"/></td>
+            <td class="border"><img id="wimg3" src="" alt="Weather Pic"/></td>
+            <td class="border"><img id="wimg4" src="" alt="Weather Pic"/></td>
+          </tr>
+          <tr>
+            <td id="temp0">&#176;F</td>
+            <td id="temp1">&#176;F</td>
+            <td id="temp2">&#176;F</td>
+            <td id="temp3">&#176;F</td>
+            <td id="temp4">&#176;F</td>
+          </tr>
+
+          </table>
+      </div>
+      <div class="article">
+        <img class="article_img" src="preston-images/article-image.jpg" alt="Free stock image of people snowboarding."/>
+        <h3>Founders Day Fresco</h3>
+        <h4>by Janica Juarez</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </div>
+      <div class="contact">
+        <img class="map" src="preston-images/PrestonMap.png" alt="Map View of Preston Idaho"/>
+        <div class="contact-info">
+          <h3>WeatherontheHorizon</h3>
+          <p>30 N 1st E <br> Preston, ID 83263</p>
+          <p>999.999.9999<br>weatheronthehorizon@woth.com</p>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        © <span id="year"></span> Weather on the Horizon | Zachary Warren |
+        Idaho |
+        <a href="https://www.byui.edu/online" target="_blank">
+          BYUI Online Learning</a
+        >
+        <br />
+        <span id="date"></span>
+        Weather API Date from <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
+      </p>
+
+      <script src="preston-js/currentdate.js"></script>
+      <script src="fishhaven-js/windchill.js"></script>
+      <script src="fishhaven-js/forecast.js"></script>
+    </footer>
+  </body>
+</html>
