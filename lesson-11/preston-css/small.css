@@ -151,8 +151,8 @@ table {
     background-color: black;
     opacity: 70%;
     padding: 0rem;
-    top: 27%;
-    left: 7%;
+    top: 0;
+    left: 0;
     display: block;
     position: absolute;
     color: white;
