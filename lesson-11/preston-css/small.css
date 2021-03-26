@@ -70,6 +70,10 @@ main {
     color: Black;
 }
 
+.hero {
+    position: relative;
+}
+
 .hero-img {
     padding: 0;
     width: 100%;
@@ -148,6 +152,7 @@ table {
 }
 
 .weatherBox {
+    max-height: 250px;
     background-color: black;
     opacity: 70%;
     padding: 0rem;

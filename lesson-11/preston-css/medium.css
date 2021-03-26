@@ -123,6 +123,7 @@
     }
 
     .weatherBox {
+        max-height: 350px;
         top: 45%;
         left: 10%;
     }
