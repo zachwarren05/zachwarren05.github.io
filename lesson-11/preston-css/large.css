@@ -1,7 +1,7 @@
 @media screen and (min-width: 950px) {
     .weatherBox {
-        top: 40%;
-        left: 30%;
+        top: 30px;
+        left: 30px;
     }
 
     .weatherBox h1 {
