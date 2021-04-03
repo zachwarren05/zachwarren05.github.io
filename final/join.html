@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Join Us!</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Join Page for Zach Warren in WDD 230.  Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <link rel="shortcut icon" href="gallery-images/favicon.ico">
+    <link rel="stylesheet" href="gallery-css/normalize.css" />
+    <link rel="stylesheet" href="gallery-css/small.css" />
+    <link rel="stylesheet" href="gallery-css/medium.css" />
+    <link rel="stylesheet" href="gallery-css/large.css" />
+    <link rel="stylesheet" href="join-css/join.css" />
+  </head>
+  <body>
+    <div><p id="saturday"></p></div>
+    <header>
+      <img
+        class="logo"
+        src="gallery-images/iconfinder_weather-thunder_274754.png"
+        alt="WeatherontheHorizon logo"
+      />
+      <section class="headings">
+        <h1>ChicoChamberofCommerce.org</h1>
+        <div class="m">Bringing unity to this Northern California Community!</div>
+      </section>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li>
+          <a href="#" onclick="toggleMenu()">&#9776; Menu </a>
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="chico.html">Chico</a>
+        </li>
+        <li>
+          <a class="current" href="join.html">Join Us!</a>
+        </li>
+        <li>
+          <a href="#">Directory</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Join Us!</h2>
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>User Information</legend>
+            <label class="top">First Name*<input type="text" name="firstname" minlength= "3" required pattern="[a-zA-Z\s]+"></label>
+            <label class="top">Last Name*<input type="text" name="lastname" minlength= "3" required pattern="[a-zA-Z\s]+"></label>
+            <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top">Cell Phone<input type="tel" name="phone" placeholder="(555) 555-5555"></label>
+            <label class="top">Business Name*<input type="text" name="businessname" minlength= "5" required pattern="[a-zA-Z\s]+"></label>
+            <label class="top">Business Address<input type="text" name="address"></label>
+            <label class="top">Business Website<input type="url" name="website" placeholder="https://www.google.com/"></label>
+            <label class="top">Business Description<input type="text" name="description"></label>
+        </fieldset>
+        <fieldset>
+          <legend>Membership Levels</legend>
+          <label class="top">Choose your Membership Type
+            <select name="membership" id="selectmembership">
+              <option value="" disabled selected>Select Level ...</option>
+              <option value="Non-profit">Non-profit ($100)</option>
+              <option value="Bronze">Bronze ($200)</option>
+              <option value="Silver">Silver ($400)</option>
+              <option value="Gold">Gold ($1000)</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>What's Included</legend>
+            <label class="top"><textarea name="comments">Additional comments</textarea></label>
+        </fieldset>
+
+        <input type="submit" value="Submit" class="submitBtn">
+
+      </form>
+
+      <script src="join.js/join.js"></script>
+    </main>
+
+    <footer>
+      <p>
+        © <span id="year"></span> Weather on the Horizon | Zachary Warren |
+        Idaho |
+        <a href="https://www.byui.edu/online" target="_blank">
+          BYUI Online Learning</a
+        >
+        <br />
+        <span id="date"></span>
+      </p>
+
+      <script src="gallery-js/currentdate.js"></script>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik:wght@500');
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    font-family: 'PT Sans';
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+
+nav ul a {
+    color: #95D5B2;
+}
+
+.responsive li {
+    display: block;
+}
+
+header img {
+    height: 90px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 1rem;
+}
+
+.m {
+    font-size: .75rem;
+    padding: 0 20% 0 20%;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background-color: #40916C;
+}
+
+main {
+    background-color: White;
+    color: Black;
+}
+
+.hero-img {
+    padding: 0;
+    width: 100%;
+    
+}
+
+main div {
+     padding: 10px;
+     margin: 10px auto;
+}
+
+
+
+footer, nav {
+    background-color: #081C15;
+    color: White;
+    text-align: center;
+    font-family: 'PT Sans';
+}
+
+h1, h2, h3 {
+    font-family: 'Rubik';
+}
+
+p {
+    font-family: 'PT Sans';
+}
+
+main {
+    margin: 0;
+    padding: 30px;
+}
+
+footer {
+    margin: 0;
+    padding: 2px;
+    font-size: .75rem;
+}
+
+nav .current {
+    background-color:  #95D5B2;
+    color:  black;
+}
+
+nav a:hover {
+    background-color:  #95D5B2;
+    color:  black;
+    
+}
+
+.forecast-title {
+    display: none;
+}
+
+table {
+    display: none;
+}
+
+.article {
+    background-color: #eee;
+}
+
+.article_img {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+}
+
+.map {
+    display: none;
+}
+
+.contact {
+    background-color: #B7E4C7;
+    text-align: left;
+}
+
+.weatherBox {
+    background-color: black;
+    opacity: 70%;
+    padding: 0rem;
+    top: 27%;
+    left: 7%;
+    display: block;
+    position: absolute;
+    color: white;
+    
+}
+
+.weatherBox h1 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.weatherBox p {
+    font-size: 0.8rem;
+}
+
+.description, #high, #chill, .humidity, #speed, .symbol {
+    color: yellow;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 0;
+} 
+
+#saturday {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    display: block;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.gallerygrid figure{
+    justify-self: center;
+    justify-content: center;
+}
+
+.gallerygrid figure img {
+    width: 100%;
+}
+
+figcaption {
+    font-family: 'Rubik';
+    text-align: center;
+}
+
+figure img[data-src] {
+    filter: blur(0.2em);
+}
+
+figure img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
