@@ -13,14 +13,15 @@
     <link rel="stylesheet" href="chico-css/small.css" />
     <link rel="stylesheet" href="chico-css/medium.css" />
     <link rel="stylesheet" href="chico-css/large.css" />
+    <link rel="stylesheet" href="index-css/cards.css" />
   </head>
   <body>
     <div><p id="saturday"></p></div>
     <header>
       <img
         class="logo"
-        src="chico-images/iconfinder_weather-thunder_274754.png"
-        alt="WeatherontheHorizon logo"
+        src="index-images/ChicoLogo.png"
+        alt="ChicoChamberofCOmmerce logo"
       />
       <section class="headings">
         <h1>ChicoChamberofCommerce.org</h1>
@@ -46,7 +47,7 @@
           <a href="#">Directory</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="contact.html">Contact</a>
         </li>
       </ul>
     </nav>
@@ -55,14 +56,14 @@
       <h2>Chico Chamber of Commerce</h2>
         <div class="hero">
           <picture>
-            <source media="(max-width: 519px)" srcset="chico-images/heroimgsmall.jpg">
-            <source media="(max-width: 949px)" srcset="chico-images/heroimgmedium.jpg">
-            <source media="(min-width: 950px)" srcset="chico-images/heroimglarge.jpg">
-            <img class="hero-img" src="chico-images/heroimglarge.jpg" alt="Hero Image"/>
+            <source media="(max-width: 519px)" srcset="index-images/ChicoHeroSmall.jpg">
+            <source media="(max-width: 949px)" srcset="index-images/ChicoHeroMedium.jpg">
+            <source media="(min-width: 950px)" srcset="index-images/ChicoHeroLarge.jpg">
+            <img class="hero-img" src="index-images/ChicoHeroLarge.jpg" alt="Hero Image by Tom Barret"/>
           </picture>
         
           <div class="weatherBox">
-            <div>
+            <div class="box">
               <h1>Weather Summary</h1>
               <hr>
               <p>Currently: <span id="description"></span></p>
@@ -95,26 +96,91 @@
           </table>
       </div>
 
-      <div class="currentevents"></div>
-      
-      <div class="article">
-        <img class="article_img" src="chico-images/article-image.jpg" alt="Free stock image of people snowboarding."/>
-        <h3>Founders Day Fresco</h3>
-        <h4>by Janica Juarez</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <div class="currentevents">
+        <section>
+          <article>
+            <div>
+              <h2>Upcoming Events</h2>
+              <hr>
+              <p>
+                April 10: Anniversary Show N shine <br>
+                April 15: Spring Economic Summit - "Resilient North State!" <br>
+                April 21: Drive Thru Dinner Fundraiser
+              </p>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <div class="ads">
+        <section>
+          <h3>Matthews, Hutton, & Warren, CPAs</h3>
+          <img class="ad_img" src="index-images/MHWLogo.png" alt="MHW CPA Logo"/>
+          <p>Local CPA Firm for Individuals and Small Businesses</p>
+          <h4>Contact</h4>
+          <p>
+            Phone Number: (530) 877-6793
+          </p>
+          <p>
+            Email: jon@mhwcpa.com
+          </p>
+          <p>
+            Visit Their Site: <a href="https://www.mhwcpa.com/" target="_blank">MHW CPA</a>
+          </p>
+        </section>
+        <section>
+          <h3>Red Hot Metal, Inc.</h3>
+          <img class="ad_img" src="index-images/RedHotLogo.jpg" alt="Red Hot Metal Logo"/>
+          <p></p>
+          <h4>Contact</h4>
+          <p>
+            Phone Number: (530) 342-1970
+          </p>
+          <p>
+            Email: info@redhotmetal.net
+          </p>
+          <p>
+            Visit Their Site: <a href="https://www.redhotmetal.net/" target="_blank">Red Hot Metal</a>
+          </p>
+        </section>
+        <section>
+          <h3>Home Instead</h3>
+          <img class="ad_img" src="index-images/HomeInsteadLogo.png" alt="Home Instead Logo"/>
+          <p>Safe and Compassionate in Home Care for Seniors</p>
+          <h4>Contact</h4>
+          <p>
+            Phone Number: (530) 895-6100
+          </p>
+          <p>
+            Visit Their Site: <a href="https://www.homeinstead.com/location/377?utm_source=google&utm_medium=organic&utm_campaign=gmb" target="_blank">Home Instead</a>
+          </p>
+        </section>
+      </div>
+
+      <div class="purpose">
+        <h3>Our Purpose</h3>
+        <p>Welcome to the Chico Chamber of Commerce! <br>  Our Chamber works hard to give back to the community that has given us so much.
+            We communicate and work with all members of the community to create a more unified environment. We also want to make sure that 
+            small businesses are heard within the community and are able to voice their opinions in the city of Chico. The Chamber's main goal is to 
+            support local businesses and grow our local community.<br>
+            Become a part of the voice!  We welcome you to take a seat with us in the Chamber so that you have the opportunity to have your voice heard.  Your 
+            business deserves the same amount of attention as everyone else.
+        </p>
+        <form action="join.html">
+          <input id = "joinbtn" type="submit" value="Join Us!" />
+        </form>
       </div>
 
       <div class="contact">
-        <img class="map" src="chico-images/chicoMap.png" alt="Map View of chico Idaho"/>
+        <div id="map"></div>
+        
         <div class="contact-info">
-          <h3>WeatherontheHorizon</h3>
-          <p>30 N 1st E <br> chico, ID 83263</p>
-          <p>999.999.9999<br>weatheronthehorizon@woth.com</p>
+          <h3>Chico Chamber of Commerce</h3>
+          <p>180 East 4th Street, Suite 120 <br> Chico, CA 95927</p>
+          <p>(530) 891-5556<br>info@chicochamber.com</p>
+          <a href="https://www.facebook.com/" target="_blank" id="fb-icon"> <img src="index-images/fbIcon.png" alt="Facebook icon"/> </a>
+          <a href="https://www.instagram.com/" target="_blank" id="ig-icon"> <img src="index-images/igIcon.png" alt="Instagram icon"/> </a>
+
         </div>
 
       </div>
@@ -129,13 +195,14 @@
         >
         <br />
         <span id="date"></span>
-        Weather API Date from <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
+        Weather API Data from <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
       </p>
 
       <script src="chico-js/currentdate.js"></script>
       <script src="chico-js/windchill.js"></script>
       <script src="chico-js/forecast.js"></script>
-      <script src="chico-js/towndata.js"></script>
+      <script src="chico-js/map.js"></script>
+      <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXLdr5ufJ7WieWsAWrPJ7Kzo1omwDhSzE&callback=initMap&libraries=&v=weekly"></script>
     </footer>
   </body>
 </html>

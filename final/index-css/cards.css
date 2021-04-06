@@ -1,68 +1,68 @@
 
-.cards {
+.ads {
     justify-content: center;
     align-items: center;
 
 }
 
-.cards section {
+.ads section {
     justify-content: center;
     align-items: center;
     border:1px solid #bbb;
     background-color: #eee;
 }
 
-.cards article {
+.ads article {
     grid-row: 1;
     width: auto;
     text-align: center;
 }
 
-.cards img {
-    width: 100%;
+.ads img {
+    max-width: 100%;
+    height: auto;
     grid-row: 2;
 }
 
 @media screen and (min-width: 32.5em) {
-    .cards{
+    .ads{
         
     }
 
-    .cards section {
+    .ads section {
         max-width: 950px;
         margin: .5rem auto;
         display: flex;
         flex-wrap: wrap;
     }
 
-    .cards section {
+    .ads section {
         display: flex;
         flex-direction: row;
         padding: 1rem;
     }
 
-    .cards section:nth-child(odd) {
+    .ads section:nth-child(odd) {
         flex-direction: row-reverse;
     }
 
-    .cards img {
-        width: 50%;
+    .ads img {
         grid-row: none;
     }
 
-    .cards article {
+    .ads article {
         grid-row: none;
         width: 50%;
     }
 
-    .cards article p {
+    .ads article p {
         text-align: center;
     }
 
 }
 
 @media screen and (min-width: 950px) {
-    .cards {
+    .ads {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
@@ -70,7 +70,7 @@
 
     }
 
-    .cards section {
+    .ads section {
         margin: 1rem;
         height: auto;
         max-width: 250px;
@@ -78,13 +78,13 @@
         align-items: center;
     }
 
-    .cards article {
+    .ads article {
         grid-row: 1;
         width: auto;
     }
 
-    .cards img {
-        width: auto;
+    .ads img {
+        max-width: 100%;
         grid-row: 2;
     }
 

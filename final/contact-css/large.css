@@ -1,7 +1,7 @@
 @media screen and (min-width: 950px) {
     .weatherBox {
-        top: 30px;
-        left: 30px;
+        top: 40%;
+        left: 30%;
     }
 
     .weatherBox h1 {
@@ -11,13 +11,8 @@
     .weatherBox p {
         font-size: 1.2rem;
     }
-
-    .box p {
-        padding: 5px;
-        margin: 10px;
-    }
     
-    #description, #high, #chill, #humidity, #speed, .symbol {
+    .description, #high, #chill, .humidity, #speed, .symbol {
         font-size: 1.2rem;
     } 
 
@@ -29,5 +24,11 @@
 
     .gallerygrid figure:hover {
         box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    }
+
+    #map {
+        display: block;
+        width: 100%;
+        max-width: 450px;
     }
 }

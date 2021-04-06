@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Contact</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Join Page for Zach Warren in WDD 230.  Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <link rel="shortcut icon" href="contact-images/favicon.ico">
+    <link rel="stylesheet" href="contact-css/normalize.css" />
+    <link rel="stylesheet" href="contact-css/small.css" />
+    <link rel="stylesheet" href="contact-css/medium.css" />
+    <link rel="stylesheet" href="contact-css/large.css" />
+    <link rel="stylesheet" href="join-css/join.css" />
+  </head>
+  <body>
+    <div><p id="saturday"></p></div>
+    <header>
+        <img
+        class="logo"
+        src="index-images/ChicoLogo.png"
+        alt="ChicoChamberofCOmmerce logo"
+      />
+      <section class="headings">
+        <h1>ChicoChamberofCommerce.org</h1>
+        <div class="m">Bringing unity to this Northern California Community!</div>
+      </section>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li>
+          <a href="#" onclick="toggleMenu()">&#9776; Menu </a>
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="chico.html">Chico</a>
+        </li>
+        <li>
+          <a href="join.html">Join Us!</a>
+        </li>
+        <li>
+          <a href="#">Directory</a>
+        </li>
+        <li>
+          <a class="current" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Contact the Chamber</h2>
+      <h3> Board of Directors</h3>
+        <ul>
+          <li>
+            Ben Winter, Chair
+          </li>
+          <li>
+            Jolene Francis, Past Chair
+          </li>
+          <li>
+            Mark Chrisman, Chair-Elect
+          </li>
+          <li>
+            Sierra Grossman, Vice Chair
+          </li>
+          <li>
+            Michelle Niven, Vice Chair
+          </li>
+          <li>
+            Karli G. Olsen, Vice Chair
+          </li>
+          <li>
+            Brandon Slater, Vice Chair
+          </li>
+          <li>
+            Anastacia L. Snyder, Vice Chair
+          </li>
+          <li>
+            Devin Van Hout, Vice Chair
+          </li>
+          <li>
+            Olivia Wilson, Treasurer
+          </li>
+        </ul>
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>Enter Your Information and Leave a Comment</legend>
+            <label class="top">Full Name<input type="text" name="firstname" minlength= "3" required pattern="[a-zA-Z\s]+"></label>
+            <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top">Phone<input type="tel" name="phone" placeholder="(555) 555-5555"></label>
+            <label class="top">Comments<textarea name="comments">Additional comments</textarea></label>
+        </fieldset>    
+
+        <input type="submit" value="Submit" class="submitBtn">
+
+      </form>
+
+      <div class="contact">
+        <div id="map">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196299.63579093872!2d-121.94598344943438!3d39.75802620077531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80831f8dfc236487%3A0x308eeb8f793a4538!2sChico%2C%20CA!5e0!3m2!1sen!2sus!4v1617565115987!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+        <div class="contact-info">
+          <h3>Chico Chamber of Commerce</h3>
+          <p>180 East 4th Street, Suite 120 <br> Chico, CA 95927</p>
+          <p>(530) 891-5556<br>info@chicochamber.com</p>
+          <a href="https://www.facebook.com/" target="_blank" id="fb-icon"> <img src="index-images/fbIcon.png" alt="Facebook icon"/> </a>
+          <a href="https://www.instagram.com/" target="_blank" id="ig-icon"> <img src="index-images/igIcon.png" alt="Instagram icon"/> </a>
+
+        </div>
+
+      </div>
+
+      <script src="join.js/join.js"></script>
+    </main>
+
+    <footer>
+      <p>
+        © <span id="year"></span> Weather on the Horizon | Zachary Warren |
+        Idaho |
+        <a href="https://www.byui.edu/online" target="_blank">
+          BYUI Online Learning</a
+        >
+        <br />
+        <span id="date"></span>
+      </p>
+
+      <script src="gallery-js/currentdate.js"></script>
+    </footer>
+  </body>
+</html>
