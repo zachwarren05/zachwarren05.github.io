@@ -70,10 +70,6 @@ main {
     color: Black;
 }
 
-.hero {
-    position: relative;
-}
-
 .hero-img {
     padding: 0;
     width: 100%;
@@ -132,21 +128,17 @@ table {
     display: none;
 }
 
-.history {
+.article {
     background-color: #eee;
 }
 
-.demographics {
-    background-color: #eee; 
-}
-
-.history_img {
+.article_img {
     width: 100%;
     margin: 0 auto;
     box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
 }
 
-#map {
+.map {
     display: none;
 }
 
@@ -156,20 +148,15 @@ table {
 }
 
 .weatherBox {
-    max-height: 250px;
     background-color: black;
     opacity: 70%;
     padding: 0rem;
-    top: 0;
-    left: 10px;
+    top: 27%;
+    left: 7%;
     display: block;
     position: absolute;
     color: white;
     
-}
-
-.contact-info img {
-    height: 50px;
 }
 
 .weatherBox h1 {
@@ -181,7 +168,7 @@ table {
     font-size: 0.8rem;
 }
 
-#description, #high, #chill, #humidity, #speed, .symbol {
+.description, #high, #chill, .humidity, #speed, .symbol {
     color: yellow;
     font-weight: bold;
     font-size: 0.8rem;
@@ -219,20 +206,3 @@ figure img {
     filter: blur(0em);
     transition: filter 0.5s;
   }
-
-  .currentevents {
-    background-color: #eee;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #B7E4C7;
-    max-width: 450px;
-    text-align: center;
-}
-
-.history h4 {
-    font-style: italic;
-}
-
-#fb-icon, #ig-icon {
-    text-decoration: none;
-}
