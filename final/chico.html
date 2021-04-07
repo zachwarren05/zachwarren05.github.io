@@ -8,18 +8,18 @@
       name="description"
       content="Chico Page for Zach Warren in WDD 230.  Web Frontend Development at Brigham Young University - Idaho"
     />
-    <link rel="shortcut icon" href="preston-images/favicon.ico">
-    <link rel="stylesheet" href="preston-css/normalize.css" />
-    <link rel="stylesheet" href="preston-css/small.css" />
-    <link rel="stylesheet" href="preston-css/medium.css" />
-    <link rel="stylesheet" href="preston-css/large.css" />
+    <link rel="shortcut icon" href="chico-images/favicon.ico">
+    <link rel="stylesheet" href="chico-css/normalize.css" />
+    <link rel="stylesheet" href="chico-css/small.css" />
+    <link rel="stylesheet" href="chico-css/medium.css" />
+    <link rel="stylesheet" href="chico-css/large.css" />
   </head>
   <body>
-    <div><p id="saturday"></p></div>
+    
     <header>
       <img
         class="logo"
-        src="preston-images/iconfinder_weather-thunder_274754.png"
+        src="chico-images/iconfinder_weather-thunder_274754.png"
         alt="WeatherontheHorizon logo"
       />
       <section class="headings">
@@ -46,7 +46,7 @@
           <a href="#">Directory</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="contact.html">Contact</a>
         </li>
       </ul>
     </nav>
@@ -55,10 +55,10 @@
       <h2>Chico, California</h2>
         <div class="hero">
           <picture>
-            <source media="(max-width: 519px)" srcset="preston-images/heroimgsmall.jpg">
-            <source media="(max-width: 949px)" srcset="preston-images/heroimgmedium.jpg">
-            <source media="(min-width: 950px)" srcset="preston-images/heroimglarge.jpg">
-            <img class="hero-img" src="preston-images/heroimglarge.jpg" alt="Hero Image"/>
+            <source media="(max-width: 519px)" srcset="index-images/ChicoHeroSmall.jpg">
+            <source media="(max-width: 949px)" srcset="index-images/ChicoHeroMedium.jpg">
+            <source media="(min-width: 950px)" srcset="index-images/ChicoHeroLarge.jpg">
+            <img class="hero-img" src="index-images/ChicoHeroLarge.jpg" alt="Hero Image by Tom Barret"/>
           </picture>
         
           <div class="weatherBox">
@@ -73,53 +73,56 @@
             </div>
           </div>
         </div>
-      <h2 class="forecast-title">5 Day Forecast</h2>
-      <div class="forecast">
-        <table>
-          <tr>
-            <th>Wed</th>
-            <th>Thur</th>
-            <th>Fri</th>
-            <th>Sat</th>
-            <th>Sun</th>
-          </tr>
-          <tr>
-            <td class="border"><img id="wimg0" src="gallery-images/placeholder.png" alt="Weather Pic"/></td>
-            <td class="border"><img id="wimg1" src="gallery-images/placeholder.png" alt="Weather Pic"/></td>
-            <td class="border"><img id="wimg2" src="gallery-images/placeholder.png" alt="Weather Pic"/></td>
-            <td class="border"><img id="wimg3" src="gallery-images/placeholder.png" alt="Weather Pic"/></td>
-            <td class="border"><img id="wimg4" src="gallery-images/placeholder.png" alt="Weather Pic"/></td>
-          </tr>
-          <tr>
-            <td id="temp0">&#176;F</td>
-            <td id="temp1">&#176;F</td>
-            <td id="temp2">&#176;F</td>
-            <td id="temp3">&#176;F</td>
-            <td id="temp4">&#176;F</td>
-          </tr>
+      
 
-          </table>
+      <div class="currentevents">
+        <section>
+          <article>
+            <div>
+              <h2>Upcoming Events</h2>
+              <hr>
+              <p>
+                April 10: Anniversary Show N shine <br>
+                April 15: Spring Economic Summit - "Resilient North State!" <br>
+                April 21: Drive Thru Dinner Fundraiser
+              </p>
+            </div>
+          </article>
+        </section>
       </div>
-
-      <div class="currentevents"></div>
       
       <div class="article">
-        <img class="article_img" src="preston-images/article-image.jpg" alt="Free stock image of people snowboarding."/>
-        <h3>Founders Day Fresco</h3>
-        <h4>by Janica Juarez</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <img class="article_img" src="chico-images/John Bidwell by Bill Husa - Enterprise-Record file photo.jpg" alt="John and Annie Bidwell. Enterprise-Record File Photo"/>
+        <h3>History of Chico, California</h3>
+        <p>The City of Chico is rich in Native American and Gold Rush history. The first inhabitants of the area were the Maidu Indians who were primarily hunters 
+          and gathers. The first recorded Europeans arrived in 1832. That same year, approximately 75% of the Indian population in California died from epidemics of 
+          disease brought by the Europeans. <br> <br>
+
+          In 1848, General John Bidwell, a member of the first covered wagon trains to California, was among several miners who discovered gold on the Feather River.
+           This event sparked a rush of prospectors into the Butte County area. With his riches, Bidwell bought 28,000 acres in both sides of Chico Creek and opened 
+           the first store of the Gold Rush (located on the corner of 1st and Main – now Tres Hombres Restaurant).
+            The city of Chico was founded in 1860 and later incorporated in 1872....
+        </p>
+        <a href="https://www.chicochamber.com/about-chico.html" target="_blank">Full History Here</a>
+      </div>
+
+      <div class="demographics">
+        <h3>Demographics of Chico, California</h3>
+        <p>
+          In 2018, Chico, CA had a population of 92k people with a median age of 29.8 and a median household income of $47,359. Between 2017 and 2018 the population 
+          of Chico, CA grew from 90,660 to 91,998, a 1.48% increase and its median household income grew from $45,337 to $47,359, a 4.46% increase.
+          <br><br>
+          In 2018, the median property value in Chico, CA was $305,300, and the homeownership rate was 44.6%. Most people in Chico, CA drove alone to work, and the 
+          average commute time was 16.7 minutes. The average car ownership in Chico, CA was 2 cars per household
+        </p>
+        <a href="https://datausa.io/profile/geo/chico-ca#:~:text=The%205%20largest%20ethnic%20groups,and%2095.8%25%20are%20U.S.%20citizens." target="_blank">For More on Demographics Click Here</a>
       </div>
 
       <div class="contact">
-        <img class="map" src="preston-images/PrestonMap.png" alt="Map View of Preston Idaho"/>
+        <img class="map" src="chico-images/chicoMap.png" alt="Map View of chico Idaho"/>
         <div class="contact-info">
           <h3>WeatherontheHorizon</h3>
-          <p>30 N 1st E <br> Preston, ID 83263</p>
+          <p>30 N 1st E <br> chico, ID 83263</p>
           <p>999.999.9999<br>weatheronthehorizon@woth.com</p>
         </div>
 
@@ -138,10 +141,10 @@
         Weather API Date from <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
       </p>
 
-      <script src="preston-js/currentdate.js"></script>
-      <script src="preston-js/windchill.js"></script>
-      <script src="preston-js/forecast.js"></script>
-      <script src="preston-js/towndata.js"></script>
+      <script src="chico-js/currentdate.js"></script>
+      <script src="chico-js/windchill.js"></script>
+      <script src="chico-js/forecast.js"></script>
+      <script src="chico-js/towndata.js"></script>
     </footer>
   </body>
 </html>
