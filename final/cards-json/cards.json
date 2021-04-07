@@ -1,0 +1,53 @@
+{
+    "businesses": [
+        {
+            "name": "Matthews, Hutton, & Warren, CPAs",
+            "photo": "MHWLogo.jpg",
+            "phone": "(530) 877-6793",
+            "email": "jon@mhwcpa.com",
+            "link": "https://www.mhwcpa.com/"
+        },
+        {
+            "name": "Red Hot Metal, Inc.",
+            "photo": "RedHotLogo.jpg",
+            "phone": "(530) 342-1970",
+            "email": "info@redhotmetal.net",
+            "link": "https://www.redhotmetal.net/"
+        },
+        {
+            "name": "Home Instead",
+            "photo": "HomeInsteadLogo.png",
+            "phone": "(530) 895-6100",
+            "email": "",
+            "link": "https://www.homeinstead.com/location/377?utm_source=google&utm_medium=organic&utm_campaign=gmb"
+        },
+        {
+            "name": "Red Hot Metal, Inc.",
+            "photo": "RedHotLogo.jpg",
+            "phone": "(530) 342-1970",
+            "email": "info@redhotmetal.net",
+            "link": "https://www.redhotmetal.net/"
+        },
+        {
+            "name": "Red Hot Metal, Inc.",
+            "photo": "RedHotLogo.jpg",
+            "phone": "(530) 342-1970",
+            "email": "info@redhotmetal.net",
+            "link": "https://www.redhotmetal.net/"
+        },
+        {
+            "name": "Red Hot Metal, Inc.",
+            "photo": "RedHotLogo.jpg",
+            "phone": "(530) 342-1970",
+            "email": "info@redhotmetal.net",
+            "link": "https://www.redhotmetal.net/"
+        },
+        {
+            "name": "Red Hot Metal, Inc.",
+            "photo": "RedHotLogo.jpg",
+            "phone": "(530) 342-1970",
+            "email": "info@redhotmetal.net",
+            "link": "https://www.redhotmetal.net/"
+        }
+    ]
+}

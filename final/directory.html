@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Directory</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="DIrectory Document for Zach Warren in WDD 230.  Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <link rel="shortcut icon" href="directory-images/favicon.ico" />
+    <link rel="stylesheet" href="directory-css/normalize.css" />
+    <link rel="stylesheet" href="directory-css/small.css" />
+    <link rel="stylesheet" href="directory-css/medium.css" />
+    <link rel="stylesheet" href="directory-css/large.css" />
+  </head>
+  <body>
+    <div><p id="saturday"></p></div>
+    <header>
+      <img
+        class="logo"
+        src="index-images/ChicoLogo.png"
+        alt="ChicoChamberofCOmmerce logo"
+      />
+      <section class="headings">
+        <h1>ChicoChamberofCommerce.org</h1>
+        <div class="m">Bringing unity to this Northern California Community!</div>
+      </section>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li>
+          <a href="#" onclick="toggleMenu()">&#9776; Menu </a>
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="chico.html">Chico</a>
+        </li>
+        <li>
+          <a href="join.html">Join Us!</a>
+        </li>
+        <li>
+          <a class="current" href="directory.html">Directory</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Weather directory</h2>
+      <div class="directorygrid">
+        <figure>
+          <img class="directory" src="directory-images/placeholder.png" data-src="directory-images/BeachSunrise.jpg" alt="Stock Photo" />
+          <figcaption>Sunrise at the Beach</figcaption>
+        </figure>
+        <figure>
+          <img class="directory" src="directory-images/placeholder.png" data-src="directory-images/DesertStorm.jpg" alt="Stock Photo" />
+          <figcaption>Desert Lightning Storm</figcaption>
+        </figure>
+        <figure>
+          <img class="directory" src="directory-images/placeholder.png" data-src="directory-images/FoggyMorning.jpg" alt="Stock Photo" />
+          <figcaption>Foggy Morning in the Mountains</figcaption>
+        </figure>
+        <figure>
+          <img class="directory" src="directory-images/placeholder.png" data-src="directory-images/FrozenLake.jpg" alt="Stock Photo" />
+          <figcaption>Winter on the Lake</figcaption>
+        </figure>
+        <figure>
+          <img class="directory" src="directory-images/placeholder.png" data-src="directory-images/LightningTornado.jpg" alt="Stock Photo" />
+          <figcaption>Tornado and Lightning Storm</figcaption>
+        </figure>
+        <figure>
+          <img class="directory" src="directory-images/placeholder.png" data-src="directory-images/Raindrops.jpg" alt="Stock Photo" />
+          <figcaption>Raindrops</figcaption>
+        </figure>
+        <figure>
+          <img class="directory" src="directory-images/placeholder.png" data-src="directory-images/Snowflake.jpg" alt="Stock Photo" />
+          <figcaption>Close Up of a Snowflake</figcaption>
+        </figure>
+        <figure>
+          <img class="directory" src="directory-images/placeholder.png" data-src="directory-images/SnowyLane.jpg" alt="Stock Photo" />
+          <figcaption>Winter Wonderland Driveway</figcaption>
+        </figure>
+        <figure>
+          <img class="directory" src="directory-images/placeholder.png" data-src="directory-images/Waterfall.jpg" alt="Stock Photo" />
+          <figcaption>Misty Morning at the Waterfall</figcaption>
+        </figure>
+      </div>
+      <script src="directory-js/lazyload.js"></script>
+    </main>
+
+    <footer>
+      <p>
+        © <span id="year"></span> Chico Chamber of Commerce | Zachary Warren |
+        Idaho |
+        <a href="https://www.byui.edu/online" target="_blank">
+          BYUI Online Learning</a
+        >
+        <br />
+        <span id="date"></span>
+        Weather API Data from <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a>
+      </p>
+      <script src="directory-js/currentdate.js"></script>
+    </footer>
+  </body>
+</html>
