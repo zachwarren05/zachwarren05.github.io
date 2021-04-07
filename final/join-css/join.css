@@ -5,6 +5,11 @@ form fieldset {
     padding: .5rem 2%;
 }
 
+.userInfo, .levels {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
 form legend {
     margin: 0 1rem;
     padding: 0 .5rem;
@@ -12,6 +17,7 @@ form legend {
 }
 
 form label.top, form div {
+    text-align: center;
     display: block;
     padding-top: 1rem;
     font-size: 1.2rem;
@@ -25,6 +31,11 @@ form label.top input, form label.top select {
     padding: .5rem;
     max-width: 20rem;
     background-color: rgba(0,0,0,0.1);
+}
+
+input, select {
+    margin: 0 auto;
+    text-align: center;
 }
 
 form label.top textarea {

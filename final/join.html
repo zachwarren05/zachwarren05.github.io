@@ -63,8 +63,8 @@
         business deserves the same amount of attention as everyone else.
       </p>
       <form method="get" action="thanks.html">
-        <fieldset>
-          <legend>User Information</legend>
+        <fieldset class = "userInfo">
+          <legend class="user">User Information</legend>
             <label class="top">First Name*<input type="text" name="firstname" minlength= "3" required pattern="[a-zA-Z\s]+"></label>
             <label class="top">Last Name*<input type="text" name="lastname" minlength= "3" required pattern="[a-zA-Z\s]+"></label>
             <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
@@ -74,7 +74,7 @@
             <label class="top">Business Website<input type="url" name="website" placeholder="https://www.google.com/"></label>
             <label class="top">Business Description<input type="text" name="description"></label>
         </fieldset>
-        <fieldset>
+        <fieldset class="levels">
           <legend>Membership Levels</legend>
           <label class="top">Choose your Membership Type
             <select name="membership" id="selectmembership">
