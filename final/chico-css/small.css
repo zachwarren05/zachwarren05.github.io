@@ -168,6 +168,10 @@ table {
     
 }
 
+.contact-info img {
+    height: 50px;
+}
+
 .weatherBox h1 {
     margin: 0;
     font-size: 1.1rem;
@@ -223,4 +227,8 @@ figure img {
     border-color: #B7E4C7;
     max-width: 450px;
     text-align: center;
+}
+
+.article h4 {
+    font-style: italic;
 }

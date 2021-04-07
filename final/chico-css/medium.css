@@ -116,8 +116,8 @@
         text-align: left;
     }
 
-    .map {
-        width: 300px;
+    #map {
+        padding: 0;
         display: flex;
         border: 1px solid black;
     }

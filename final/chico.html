@@ -19,8 +19,8 @@
     <header>
       <img
         class="logo"
-        src="chico-images/iconfinder_weather-thunder_274754.png"
-        alt="WeatherontheHorizon logo"
+        src="index-images/ChicoLogo.png"
+        alt="ChicoChamberofCOmmerce logo"
       />
       <section class="headings">
         <h1>ChicoChamberofCommerce.org</h1>
@@ -62,11 +62,11 @@
           </picture>
         
           <div class="weatherBox">
-            <div>
+            <div class="box">
               <h1>Weather Summary</h1>
               <hr>
               <p>Currently: <span id="description"></span></p>
-              <p>High: <span id="high"></span><span class="symbol">°F</span></p>
+              <p>Current Temp: <span id="high"></span><span class="symbol">°F</span></p>
               <p>Wind Chill: <span id="chill"></span><span class="symbol">°F</span></p>
               <p>Humidity: <span id="humidity"></span><span class="symbol">%</span></p>
               <p>Wind Speed: <span id="speed"></span> <span class="symbol">mph</span></p>
@@ -94,6 +94,7 @@
       <div class="article">
         <img class="article_img" src="chico-images/John Bidwell by Bill Husa - Enterprise-Record file photo.jpg" alt="John and Annie Bidwell. Enterprise-Record File Photo"/>
         <h3>History of Chico, California</h3>
+        <h4>from Chico Chamber.com</h4>
         <p>The City of Chico is rich in Native American and Gold Rush history. The first inhabitants of the area were the Maidu Indians who were primarily hunters 
           and gathers. The first recorded Europeans arrived in 1832. That same year, approximately 75% of the Indian population in California died from epidemics of 
           disease brought by the Europeans. <br> <br>
@@ -119,11 +120,17 @@
       </div>
 
       <div class="contact">
-        <img class="map" src="chico-images/chicoMap.png" alt="Map View of chico Idaho"/>
+        <div id="map">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196299.63579093872!2d-121.94598344943438!3d39.75802620077531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80831f8dfc236487%3A0x308eeb8f793a4538!2sChico%2C%20CA!5e0!3m2!1sen!2sus!4v1617565115987!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
         <div class="contact-info">
-          <h3>WeatherontheHorizon</h3>
-          <p>30 N 1st E <br> chico, ID 83263</p>
-          <p>999.999.9999<br>weatheronthehorizon@woth.com</p>
+          <h3>Chico Chamber of Commerce</h3>
+          <p>180 East 4th Street, Suite 120 <br> Chico, CA 95927</p>
+          <p>(530) 891-5556<br>info@chicochamber.com</p>
+          <a href="https://www.facebook.com/" target="_blank" id="fb-icon"> <img src="index-images/fbIcon.png" alt="Facebook icon"/> </a>
+          <a href="https://www.instagram.com/" target="_blank" id="ig-icon"> <img src="index-images/igIcon.png" alt="Instagram icon"/> </a>
+
         </div>
 
       </div>
@@ -142,7 +149,7 @@
       </p>
 
       <script src="chico-js/currentdate.js"></script>
-      <script src="chico-js/windchill.js"></script>
+      <script src="index-js/windchill.js"></script>
       <script src="chico-js/forecast.js"></script>
       <script src="chico-js/towndata.js"></script>
     </footer>
