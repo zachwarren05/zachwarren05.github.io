@@ -132,7 +132,7 @@ table {
     display: none;
 }
 
-.article {
+.history {
     background-color: #eee;
 }
 
@@ -140,7 +140,7 @@ table {
     background-color: #eee; 
 }
 
-.article_img {
+.history_img {
     width: 100%;
     margin: 0 auto;
     box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
@@ -229,6 +229,10 @@ figure img {
     text-align: center;
 }
 
-.article h4 {
+.history h4 {
     font-style: italic;
+}
+
+#fb-icon, #ig-icon {
+    text-decoration: none;
 }
