@@ -65,20 +65,14 @@
     }
 
     table td img {
-        display: block;
+        max-width: 50px;
         margin: 0 auto;
     }
 
-    .border {
+    .sun {
+        border-collapse: collapse;
         border-left: 1px solid black;
         border-right: 1px solid black;
-    }
-
-    #wimg0, #wimg1, #wimg2, #wimg3, #wimg4 {
-        display: block;
-        margin: 0 auto;
-        border-collapse: collapse;
-        width: 100%;
     }
 
     table td {
@@ -87,7 +81,7 @@
         border-collapse: collapse;
     }
 
-    #temp0, #temp1, #temp2, #temp3, #temp4 {
+    .temp {
         border-bottom: 1px solid black;
         border-left: 1px solid black;
         border-right: 1px solid black;
@@ -116,17 +110,9 @@
         text-align: left;
     }
 
-    #map {
-        height: 300px;
-        width: 50%;
-        display: flex;
-        border: 1px solid black;
-    }
-
     .weatherBox {
-        max-height: 350px;
-        top: 10px;
-        left: 20px;
+        top: 45%;
+        left: 10%;
     }
 
     .weatherBox h1 {
@@ -137,7 +123,7 @@
         font-size: .9rem;
     }
     
-    #description, #high, #chill, #humidity, #speed, .symbol {
+    .description, #high, #chill, .humidity, #speed, .symbol {
         font-size: .9rem;
     } 
 
@@ -149,6 +135,11 @@
     .gallery img{
         display: flex;
         width: 100%;
+    }
+
+    #map {
+        width: 300px;
+        display: flex;
     }
 
 }

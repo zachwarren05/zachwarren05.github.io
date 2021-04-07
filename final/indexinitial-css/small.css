@@ -70,27 +70,15 @@ main {
     color: Black;
 }
 
-.hero {
-    position: relative;
-}
-
 .hero-img {
     padding: 0;
     width: 100%;
     
 }
 
-.hero, .weatherBox, .forecast, .currentevents, .ads, .contact-info, .purpose {
-    padding: 10px;
-    margin: 10px auto;
-}
-
-.box {
-    padding: 10px;
-}
-
-.box p {
-    margin: 5px;
+main div {
+     padding: 10px;
+     margin: 10px auto;
 }
 
 
@@ -140,28 +128,7 @@ table {
     display: none;
 }
 
-.purpose h3 {
-    text-align: center;
-}
-
-.purpose form {
-    text-align: center;
-}
-
-#joinbtn {
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.purpose input {
-    background-color: #48ACF0;
-}
-
-.purpose p {
-    text-align: center;
-}
-
-.purpose {
+.article {
     background-color: #eee;
 }
 
@@ -171,7 +138,7 @@ table {
     box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
 }
 
-#map {
+.map {
     display: none;
 }
 
@@ -180,21 +147,12 @@ table {
     text-align: left;
 }
 
-.contact-info img {
-    height: 50px;
-}
-
-#fb-icon, #ig-icon {
-    text-decoration: none;
-}
-
 .weatherBox {
-    max-height: 250px;
     background-color: black;
     opacity: 70%;
     padding: 0rem;
-    top: 0;
-    left: 10px;
+    top: 27%;
+    left: 7%;
     display: block;
     position: absolute;
     color: white;
@@ -210,7 +168,7 @@ table {
     font-size: 0.8rem;
 }
 
-#description, #high, #chill, #humidity, #speed, .symbol {
+.description, #high, #chill, .humidity, #speed, .symbol {
     color: yellow;
     font-weight: bold;
     font-size: 0.8rem;
@@ -247,13 +205,4 @@ figure img[data-src] {
 figure img {
     filter: blur(0em);
     transition: filter 0.5s;
-}
-
-.currentevents {
-    background-color: #eee;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #B7E4C7;
-    max-width: 450px;
-    text-align: center;
-}
+  }
