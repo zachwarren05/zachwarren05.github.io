@@ -1,0 +1,90 @@
+.ads {
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ads section {
+    justify-content: center;
+    align-items: center;
+    border:1px solid #bbb;
+    background-color: #eee;
+}
+
+.ads article {
+    grid-row: 1;
+    width: auto;
+    text-align: center;
+}
+
+.ads img {
+    width: 100%;
+    grid-row: 2;
+}
+
+@media screen and (min-width: 32.5em) {
+    .ads{
+        
+    }
+
+    .ads section {
+        max-width: 950px;
+        margin: .5rem auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ads section {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    .ads section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .ads img {
+        width: 50%;
+        grid-row: none;
+    }
+
+    .ads article {
+        grid-row: none;
+        width: 50%;
+    }
+
+    .ads article p {
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 950px) {
+    .ads {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .ads section {
+        margin: 1rem;
+        height: auto;
+        max-width: 350px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ads article {
+        grid-row: 1;
+        width: auto;
+    }
+
+    .ads img {
+        width: 100%;
+        grid-row: 2;
+    }
+
+}
